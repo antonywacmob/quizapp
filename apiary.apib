@@ -59,3 +59,83 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                     }
                 ]
         }
+        
+        
+        
+## Questions [/questions]
+
+### List All Questions [GET]
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully loaded",
+          "data": [
+                    {
+                        "question_type":1,
+                        "question_number":1,
+                        "question":"Question 1",
+                        "question_desc":"",
+                        "options":[
+                                    "Option 1",
+                                    "Option 2",
+                                    "Option 3",
+                                    "Option 4"
+                        ],
+                        "answer":"Option 1"
+                    },
+                    {
+                        "question_type":1,
+                        "question_number":2,
+                        "question":"Question 2",
+                        "question_desc":"",
+                        "options":[
+                                    "Option 1",
+                                    "Option 2",
+                                    "Option 3",
+                                    "Option 4"
+                        ],
+                        "answer":"Option 2"
+                    },
+                    {
+                        "question_type":1,
+                        "question_number":3,
+                        "question":"Question 3",
+                        "question_desc":"",
+                        "options":[
+                                    "Option 1",
+                                    "Option 2",
+                                    "Option 3",
+                                    "Option 4"
+                        ],
+                        "answer":"Option 3"
+                    },
+                    {
+                        "question_type":1,
+                        "question_number":4,
+                        "question":"Question 4",
+                        "question_desc":"",
+                        "options":[
+                                    "Option 1",
+                                    "Option 2",
+                                    "Option 3",
+                                    "Option 4"
+                        ],
+                        "answer":"Option 4"
+                    },
+                    {
+                        "question_type":1,
+                        "question_number":5,
+                        "question":"Question 5",
+                        "question_desc":"",
+                        "options":[
+                                    "Option 1",
+                                    "Option 2",
+                                    "Option 3",
+                                    "Option 4"
+                        ],
+                        "answer":"Option 3"
+                    }
+                ]
+        }
