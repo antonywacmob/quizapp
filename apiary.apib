@@ -366,3 +366,52 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                     }]
                 }
         }
+        
+        
+## Home page [/home_page]
+
+### List All Questions [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully listed",
+          "data":{
+                "name":"jon doe",
+                "image_url":"",
+                "achieved_score":24,
+                "total_score":30,
+                "result":[{"correct_anwers":8,"total_questions":12,"score":14},
+                {"correct_anwers":8,"total_questions":12,"score":14},
+                {"correct_anwers":8,"total_questions":12,"score":14}],
+                "subscribed_topics":["vehicle", "internet"]}
+                }
+        }
+        
+        
+## Notification page [/notifications]
+
+### List All Questions [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully listed",
+          "data":{
+          
+                }
+        }
