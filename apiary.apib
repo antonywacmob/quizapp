@@ -243,3 +243,126 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                     }
                 ]
         }
+        
+        
+## Result of present Test [/test_result/{question_code}]
+
+### List All Questions [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully listed",
+          "data":{
+                    "test_title":"automobile test",
+                    "test_id":10,
+                    "topic_name":"vehicle",
+                    "topic_id":34,
+                    "image_url":"",
+                    "number_questions":20,
+                    "number_correct":12,
+                    "number_wrong":8,
+                    "mark_scored":12,
+                    "time_used":360,
+                    "date_exam":"21-03-2019",
+                    "time_exam":"02:30pm"
+                }
+        }
+        
+        
+## Results [/results]
+
+### List All Questions [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully listed",
+          "data":{
+                    [{
+                    "test_title":"automobile test",
+                    "test_id":10,
+                    "result_id":28,
+                    "topic_name":"vehicle", 
+                    "topic_id":34,
+                    "image_url":"",
+                    "number_questions":20,
+                    "number_correct":12,
+                    "number_wrong":8,
+                    "mark_scored":12,
+                    "time_used":360,
+                    "date_exam":"21-03-2019",
+                    "time_exam":"02:30pm"
+                    },
+                    {"test_title":"automobile test",
+                    "test_id":10,
+                    "result_id":28,
+                    "topic_name":"vehicle", 
+                    "topic_id":34,
+                    "image_url":"",
+                    "number_questions":20,
+                    "number_correct":12,
+                    "number_wrong":8,
+                    "mark_scored":12,
+                    "time_used":360,
+                    "date_exam":"21-03-2019",
+                    "time_exam":"02:30pm"
+                    },
+                    {"test_title":"automobile test",
+                    "test_id":10,
+                    "result_id":28,
+                    "topic_name":"vehicle", 
+                    "topic_id":34,
+                    "image_url":"",
+                    "number_questions":20,
+                    "number_correct":12,
+                    "number_wrong":8,
+                    "mark_scored":12,
+                    "time_used":360,
+                    "date_exam":"21-03-2019",
+                    "time_exam":"02:30pm"
+                    },
+                    {"test_title":"automobile test",
+                    "test_id":10,
+                    "result_id":28,
+                    "topic_name":"vehicle", 
+                    "topic_id":34,
+                    "image_url":"",
+                    "number_questions":20,
+                    "number_correct":12,
+                    "number_wrong":8,
+                    "mark_scored":12,
+                    "time_used":360,
+                    "date_exam":"21-03-2019",
+                    "time_exam":"02:30pm"
+                    },
+                    {"test_title":"automobile test",
+                    "test_id":10,
+                    "result_id":28,
+                    "topic_name":"vehicle", 
+                    "topic_id":34,
+                    "image_url":"",
+                    "number_questions":20,
+                    "number_correct":12,
+                    "number_wrong":8,
+                    "mark_scored":12,
+                    "time_used":360,
+                    "date_exam":"21-03-2019",
+                    "time_exam":"02:30pm"
+                    }]
+                }
+        }
