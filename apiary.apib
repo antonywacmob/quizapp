@@ -141,3 +141,105 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                     }]
                 }
         }
+        
+        
+        
+## Update Topics [/update_topics]
+
+### List All Questions [POST]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer dasljhvlaskvaf"
+        }
+
++ Request (application/json)
+
+        [
+            1,
+            2,
+            3
+        ]
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully updated"
+        }
+        
+        
+ 
+## Submit Test [/submit_test]
+
+### List All Questions [POST]
+
++ Request (application/json)
+
+        {
+            "question_code":"QT543",
+            "user_id":1,
+            "answers":[{"question_number":1,"answer":"Option 1"},{"question_number":2,"answer":"Option 2"},{"question_number":3,"answer":"Option 3"},{"question_number":4,"answer":"Option 4"}],
+            "time":7890000,
+            "time_used":376
+        }
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully submitted"
+        }
+        
+        
+## Availbale Tests [/available_tests]
+
+### List All Questions [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully listed",
+          "data":[
+                    {
+                    "test_title":"Automobile test",
+                    "test_id":34,
+                    "topic_name":"vehicles",
+                    "topic_id":26,
+                    "image_url":"",
+                    "instructions":"",
+                    "number_questions":20,
+                    "created_date":"20-03-2019",
+                    "created_time":"02:30 pm"
+                    },
+                    {
+                    "test_title":"Automobile test",
+                    "test_id":35,
+                    "topic_name":"vehicles",
+                    "topic_id":26,
+                    "image_url":"",
+                    "instructions":"",
+                    "number_questions":20,
+                    "created_date":"20-03-2019",
+                    "created_time":"02:30 pm"
+                    },
+                    {
+                    "test_title":"Automobile test",
+                    "test_id":36,
+                    "topic_name":"vehicles",
+                    "topic_id":26,
+                    "image_url":"",
+                    "instructions":"",
+                    "number_questions":20,
+                    "created_date":"20-03-2019",
+                    "created_time":"02:30 pm"
+                    }
+                ]
+        }
