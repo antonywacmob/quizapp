@@ -415,3 +415,53 @@ Polls is a simple API allowing consumers to view polls and vote in them.
           
                 }
         }
+        
+        
+        
+## Test Under Topic [/topic_tests/{topic_id}]
+
+### List All Questions [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully listed",
+          "data":{
+          
+                }
+        }
+        
+        
+        
+        
+## Topic Details [/topic_details/{topic_id}]
+
+### List All Questions [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
+
++ Response 200 (application/json)
+
+        {
+        "status":"success",
+        "message":"successfully listed",
+        "data":
+        {
+            "topic_name":"vehicle",
+            "image_url":"",
+            "number_followers":300,
+            "number_tests":21,
+            "topic_desc":"descvs gsfd gdfs"
+        }
+        }
