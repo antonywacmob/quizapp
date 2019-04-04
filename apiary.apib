@@ -587,3 +587,114 @@ Polls is a simple API allowing consumers to view polls and vote in them.
             "status":"success",
             "message":"topic followed"
         }
+        
+        
+        
+        
+## Login [/login]
+
+### Login [POST]
+
++ Request (application/json)
+
+        {
+            "email": "xxx@yyy.com",
+            "password": "password"
+        }
+        
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "message": "user successfully logged in",
+            "data": {
+                        "token": "elxkjkjskjzvkjhkjkjjhckjhkjkzjhkjbkjbkjszcv"
+            }
+        
+        }
+        
+## Token Refresh [/token_refresh]
+
+### Login [POST]
+
++ Request (application/json)
+
+        {
+            "token": "elxkjkjskjzvkjhkjkjjhckjhkjkzjhkjbkjbkjszcv"
+        }
+        
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "message": "token successfully refreshed",
+            "data": {
+                        "token": "fbdbedzsdzdgnsdgnsdfgsrtjn"
+            }
+        
+        }
+        
+        
+## Register [/register]
+
+### Register [POST]
+
++ Request (application/json)
+
+        {
+            "name": "abcd",
+            "email": "abcd@efg.com",
+            "password": "password",
+            "phone": "9037324059",
+            "gender": "Male"
+        }
+        
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "message": "account successfully created",
+        
+        }
+        
+        
+## Edit Profile [/edit_profile]
+
+### Register [POST]
+
++ Request (application/json)
+
+        {
+            "name": "abcd",
+            "email": "abcd@efg.com",
+            "password": "password",
+            "phone": "9037324059",
+            "gender": "Male"
+        }
+        
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "message": "profile updated successfully"
+        
+        }
+        
+
+## Forgot Password [/reset_password]
+
+### Register [POST]
+
++ Request (application/json)
+
+        {
+            "email": "abcd@efg.com",
+        }
+        
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "message": "Verification link sent to email"
+        
+        }
