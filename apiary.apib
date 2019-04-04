@@ -555,14 +555,15 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 + Response 200 (application/json)
 
         {
-        "status":"success",
-        "message":"successfully listed",
-        "data":
-        {
-            "topic_name":"vehicle",
-            "image_url":"",
-            "number_followers":300,
-            "number_tests":21,
-            "topic_desc":"descvs gsfd gdfs"
-        }
+            "status":"success",
+            "message":"successfully listed",
+            "data":
+                    {
+                    "topic_name":"vehicle",
+                    "image_url":"",
+                    "number_followers":300,
+                    "number_tests":21,
+                    "topic_desc":"descvs gsfd gdfs",
+                    "is_active": 0
+                }
         }
