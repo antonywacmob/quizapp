@@ -688,13 +688,14 @@ Polls is a simple API allowing consumers to view polls and vote in them.
 + Request (application/json)
 
         {
-            "email": "abcd@efg.com",
+            "phone": "9037324058",
         }
         
 + Response 200 (application/json)
 
         {
             "status": "success",
-            "message": "Verification link sent to email"
+            "message": "OTP sent to phone",
+            "data":"1234"
         
         }
