@@ -409,6 +409,29 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                 }
         }
         
+## View Profile [/profile]
+
+### Profile [GET]
+
++ Header (application/json)
+
+        {
+            "Authorization":"Bearer caksjcahksjascdasca"
+        }
+
++ Response 200 (application/json)
+
+        {
+          "status":"success",
+          "message":"successfully listed",
+          "data":{
+                "name":"Sithara Krishnakumar",
+                "image_url":"https://i.ibb.co/kmrbPJp/22687832-1426096807440196-4276502542564884957-n.jpg",
+                "email":"sithara@gmail.com",
+                "phone": "9037324058"
+                }
+        }
+        
         
 ## Home page [/home_page]
 
