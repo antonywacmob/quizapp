@@ -765,7 +765,7 @@ Polls is a simple API allowing consumers to view polls and vote in them.
         }
         
 
-## Forgot Password [/reset_password]
+## Forgot Password [/forgot_password]
 
 ### Register [POST]
 
@@ -782,6 +782,24 @@ Polls is a simple API allowing consumers to view polls and vote in them.
             "message": "OTP sent to phone",
             "data":"1234"
         
+        }
+        
+        
+## Forgot Password [/reset_password]
+
+### Register [POST]
+
++ Request (application/json)
+
+        {
+            "password": "1234",
+        }
+        
++ Response 200 (application/json)
+
+        {
+            "status": "success",
+            "message": "Password reset successfull"
         }
         
 ## Edit Email [/change_email]
